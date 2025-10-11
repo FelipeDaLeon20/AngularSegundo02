@@ -31,14 +31,16 @@
     Sexo  <br>
     <label for="sexo" class="form-label">
         
-        <button type="radio" id="masculino" class="form-control" formControlName="masculino"></button>
-        <button type="radio" id="femenino" class="form-control" formControlName="femenino"></button>
+        <button type="radio" id="sexo" class="form-control" formControlName="sexo" value="0"></button>masculino
+        <button type="radio" id="sexo" class="form-control" formControlName="sexo" value="1"></button>femenino
     </label> <br>
 
 
 
-    <button class="btn btn-primary" > Imprimir</button>
-            <h2></h2>
+    <button class="btn btn-primary" (click)="imprimirZodiaco()"> Imprimir</button>
+            <h2>Hola {{nombreM}} <br> 
+            tienes {{edadM}} años <br>
+        tu signo zodiacal chino es {{signoM}}</h2>
 </div>
 
 
