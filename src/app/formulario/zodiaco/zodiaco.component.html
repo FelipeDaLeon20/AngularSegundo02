@@ -17,22 +17,22 @@
     </label><br>
     Fecha de nacimiento <br>
     <label for="dia" class="form-label">
-        Dia
+         dia
         <input type="number" id="dia" class="form-control" formControlName="dia">    
     </label>
     <label for="mes" class="form-label">
-        Dia
+        mes
         <input type="number" id="mes" class="form-control" formControlName="mes">    
     </label>
     <label for="anio" class="form-label">
-        Dia
+        año
         <input type="number" id="anio" class="form-control" formControlName="anio">    
     </label> <br>
     Sexo  <br>
     <label for="sexo" class="form-label">
         
-        <button type="radio" id="sexo" class="form-control" formControlName="sexo" value="0"></button>masculino
-        <button type="radio" id="sexo" class="form-control" formControlName="sexo" value="1"></button>femenino
+        masculino<button type="radio" id="sexo" class="form-control" formControlName="sexo" value="0"></button>
+        femenino<button type="radio" id="sexo" class="form-control" formControlName="sexo" value="1"></button>
     </label> <br>
 
 
@@ -40,7 +40,9 @@
     <button class="btn btn-primary" (click)="imprimirZodiaco()"> Imprimir</button>
             <h2>Hola {{nombreM}} <br> 
             tienes {{edadM}} años <br>
-        tu signo zodiacal chino es {{signoM}}</h2>
+        tu signo zodiacal chino es {{signoM}} <br>
+        
+     </h2>
 </div>
 
 

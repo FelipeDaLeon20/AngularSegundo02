@@ -44,7 +44,8 @@ ngOnInit():void
     this.signoM=this.objZodiaco.signo;
     this.objZodiaco.conocerSexo();
     this.sexoM=this.objZodiaco.sexoV;
-    this.nombreM=this.formularioZodiaco.value.nombre;
+    this.nombreM=this.formularioZodiaco.value.nombre+' '+this.formularioZodiaco.value.aPaterno+' '+this.formularioZodiaco.value.aMaterno;
+    
   }
 
 

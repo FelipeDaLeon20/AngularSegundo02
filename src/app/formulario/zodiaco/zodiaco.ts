@@ -61,14 +61,14 @@ export class zodiaco
     }
     conocerSexo()
     {
-      if(this.sexoC==0)
+      switch(this.sexoC)
       {
-         this.sexoV="masculino";
+         case 0: this.sexoV="Hombre";
+         break;
+         case 1: this.sexoV="Mujer";
+         break;
       }
-      else
-      {
-         this.sexoV="femenino";
-      }
+      return this.sexoV;
     }
 
 }
