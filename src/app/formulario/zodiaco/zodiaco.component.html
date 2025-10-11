@@ -1,0 +1,47 @@
+<p>zodiaco works!</p>
+<form [formGroup]="formularioZodiaco">
+
+
+<div class="mb-3">
+    <label for="nombre" class="form-label">
+        nombre
+        <input type="text" id="nombre" class="form-control" formControlName="nombre">    
+    </label><br>
+    <label for="aPaterno" class="form-label">
+        apellido Paterno
+        <input type="text" id="aPaterno" class="form-control" formControlName="aPaterno">    
+    </label><br>
+    <label for="aMaterno" class="form-label">
+        apellido Materno
+        <input type="text" id="aMaterno" class="form-control" formControlName="aMaterno">    
+    </label><br>
+    Fecha de nacimiento <br>
+    <label for="dia" class="form-label">
+        Dia
+        <input type="number" id="dia" class="form-control" formControlName="dia">    
+    </label>
+    <label for="mes" class="form-label">
+        Dia
+        <input type="number" id="mes" class="form-control" formControlName="mes">    
+    </label>
+    <label for="anio" class="form-label">
+        Dia
+        <input type="number" id="anio" class="form-control" formControlName="anio">    
+    </label> <br>
+    Sexo  <br>
+    <label for="sexo" class="form-label">
+        
+        <button type="radio" id="masculino" class="form-control" formControlName="masculino"></button>
+        <button type="radio" id="femenino" class="form-control" formControlName="femenino"></button>
+    </label> <br>
+
+
+
+    <button class="btn btn-primary" > Imprimir</button>
+            <h2></h2>
+</div>
+
+
+
+</form>
+
