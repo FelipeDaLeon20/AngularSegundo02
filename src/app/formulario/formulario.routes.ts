@@ -4,14 +4,14 @@ export default
 [
     {
      path:'distancia',
-     loadComponent:()=>import('./distancia/distancia.component')
+     loadComponent:()=>import('./distancia/distancia.component').then(c=>c.DistanciaComponent)
     },
     {
-        path:'multiplicacionn',
-        loadComponent:()=>import('./multiplicacion/multiplicacion.component')
+        path:'multiplicacion',
+        loadComponent:()=>import('./multiplicacion/multiplicacion.component').then(c=>c.MultiplicacionComponent)
     },
     {
         path:'zodiaco',
-        loadComponent:()=>import('./zodiaco/zodiaco.component')
+        loadComponent:()=>import('./zodiaco/zodiaco.component').then(c=>c.ZodiacoComponent)
     }
 ]

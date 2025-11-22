@@ -4,18 +4,18 @@ export default
 [
     {
      path:'agregar',
-     loadComponent:()=>import('./agregar/agregar.component')
+     loadComponent:()=>import('./agregar/agregar.component').then(c=>c.AgregarComponent)
     },
     {
-        path:'alumnos',
-        loadComponent:()=>import('./alumnos/alumnos.component')
+        path:'listaalumnos',
+        loadComponent:()=>import('./alumnos/alumnos.component').then(c=>c.AlumnosComponent)
     },
     {
      path:'editar',
-     loadComponent:()=>import('./editar/editar.component')
+     loadComponent:()=>import('./editar/editar.component').then(c=>c.EditarComponent)
     },
     {
         path:'eliminar',
-        loadComponent:()=>import('./eliminar/eliminar.component')
+        loadComponent:()=>import('./eliminar/eliminar.component').then(c=>c.EliminarComponent)
     }
 ]

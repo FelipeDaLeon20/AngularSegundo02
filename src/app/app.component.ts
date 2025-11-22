@@ -6,10 +6,12 @@ import { MultiplicacionComponent } from './formulario/multiplicacion/multiplicac
 import { ZodiacoComponent } from './formulario/zodiaco/zodiaco.component';
 import { multiplicacion } from './formulario/multiplicacion/multiplicacion';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TempComponent } from "./tem/temp/temp.component";
+import { TemhComponent } from "./tem/temh/temh.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

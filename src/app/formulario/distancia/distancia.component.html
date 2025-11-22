@@ -1,16 +1,18 @@
+
+
+<form class="max-w-sm mx-auto" [formGroup]="formulario">
+  <div class="mb-5">
+    <label for="numero1" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numero 1</label>
+    <input type="number" id="numero1" formControlName="numero1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  required />
+  </div>
+  <div class="mb-5">
+    <label for="numero2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Numero 2</label>
+    <input type="number" id="numero2" formControlName="numero2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required />
+  </div>
+  
+  <button (click)="multiplicar()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Multiplicar</button>
 <div>
-    <h1>Multiplicación</h1>
-    <form [formGroup]="formulario">
-        <div class="mb-3">
-            <label for="numero1" class="form-label">
-            <input type="number" id="numero1" class="form-control" formControlName="numero1">    
-            </label>
-            <label for="numero2" class="form-label"> 
-            <input type="number" id="numero2" class="form-control" formControlName="numero2">   
-            </label>
-            <br>
-            <button class="btn btn-primary" (click)="multiplicar()">Multiplicar</button>
-            <h2>Resultado : {{resultado}}</h2>
-        </div>
-    </form>
+    <label for="resultado" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">{{resultado}}</label>
 </div>
+</form>
+
